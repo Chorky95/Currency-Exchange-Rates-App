@@ -243,6 +243,37 @@
   color: red;
 }
 
+@media screen and (max-width: 850px) {
+  .container .heading {
+    font-size: 1.5rem;
+    height: 10vh;
+    padding-top: 0.8rem;
+  }
+  .container .entry {
+    width: 350px;
+  }
+  .container .entry input {
+    width: 320px;
+  }
+  .container .msg {
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1rem;
+  }
+  .ajax-section .output {
+    width: 350px;
+  }
+  .ajax-section .output__entered {
+    font-size: 1.5rem;
+  }
+  .ajax-section .output__equal-sign {
+    font-size: 1rem;
+  }
+  .ajax-section .output__converted {
+    font-size: 2rem;
+  }
+}
+
 html {
   height: 100vh;
 }
