@@ -5,8 +5,7 @@ const amount = document.querySelector(".entry__amount");
 const baseCurrency = document.querySelector(".entry__base");
 const targetCurrency = document.querySelector(".entry__target");
 
-const apiKey = "569b1b389ae57352e134d0ba66972669";
-const url = `http://data.fixer.io/api/latest?access_key=${apiKey}`;
+const url = `https://api.exchangeratesapi.io/latest`;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -29,6 +28,7 @@ form.addEventListener("submit", (e) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     data = await response.json();
+    console.log(data);
 
     let convertedValue;
     if (inputCurr === "EUR") {
