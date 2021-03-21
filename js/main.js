@@ -5,7 +5,7 @@ const amount = document.querySelector(".entry__amount");
 const baseCurrency = document.querySelector(".entry__base");
 const targetCurrency = document.querySelector(".entry__target");
 
-const url = `https://api.exchangeratesapi.io/latest`;
+const url = `https://api.exchangerate.host/latest`;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
