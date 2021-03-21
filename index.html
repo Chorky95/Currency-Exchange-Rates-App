@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Currency Exchange Rates App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/main.css"
+    />
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <h1 class="heading">Currency Exchange Rates App</h1>
+        <form class="entry">
+          <input
+            type="number"
+            placeholder="Enter amount... (Default: 1)"
+            class="entry__amount"
+            autofocus
+          />
+          <input
+            type="text"
+            placeholder="Enter base currency..."
+            class="entry__base"
+          />
+          <input
+            type="text"
+            placeholder="Enter target currency..."
+            class="entry__target"
+          />
+          <button type="submit">Convert</button>
+        </form>
+        <h3 class="msg">
+          Enter currencies like i.e. EUR, USD... <br />
+          <a href="https://fixer.io/symbols" target="_blank"
+            >List of all currencies and ISO-4217 codes</a
+          >
+        </h3>
+      </div>
+    </section>
+    <section class="ajax-section" id="conversion-results">
+      <!--<div class="output">
+        <h2 class="output__entered">1 EUR</h2>
+        <h2 class="output__equal-sign"><i class="fas fa-equals"></i></h2>
+        <h2 class="output__converted">7.65 HRK</h2>
+      </div>-->
+    </section>
+    <footer class="footer">
+      <div class="copyright"><h3> <a href="https://ivancorkovicportfolio.netlify.app/">&copy; 2021 Ivan Ćorković</a></h3</div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/ivan.corkovic.1/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/corkovic.i/" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ivan-ćorković-1643781ba"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Chorky95" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/main.js"></script>
+  <script
+    src="https://kit.fontawesome.com/42f4f93318.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
