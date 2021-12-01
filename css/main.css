@@ -32,13 +32,13 @@
   border-radius: 30px;
   -webkit-box-shadow: 5px 5px 2px black;
           box-shadow: 5px 5px 2px black;
-  background-color: green;
+  background-color: red;
 }
 
 .container .entry input {
   padding-top: 1rem;
   margin-bottom: 1rem;
-  width: 381px;
+  width: 380px;
   position: relative;
   background: transparent;
   border: none;
