@@ -10,16 +10,16 @@ const url = `https://api.exchangerate.host/latest`;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let inputVal = Number(amount.value);
+  let inputVal = Number(amount.value.replace(',', '.'));
   if (!inputVal) {
     inputVal = 1;
   }
   let inputCurr = baseCurrency.value.toUpperCase();
   let targetCurr = targetCurrency.value.toUpperCase();
   let data;
-  console.log(inputVal, typeof inputVal);
-  console.log(inputCurr, typeof inputCurr);
-  console.log(targetCurr, typeof targetCurr);
+  // console.log(inputVal, typeof inputVal);
+  // console.log(inputCurr, typeof inputCurr);
+  // console.log(targetCurr, typeof targetCurr);
 
   async function apiCall() {
     let response = await fetch(url);
@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     data = await response.json();
-    console.log(data);
+    // console.log(data);
 
     let convertedValue;
     if (inputCurr === "EUR") {
@@ -44,7 +44,7 @@ form.addEventListener("submit", (e) => {
       convertedValue = inputEuro * data.rates[targetCurr];
     }
 
-    console.log(convertedValue);
+    // console.log(convertedValue);
 
     function showResults() {
       document.getElementById(
